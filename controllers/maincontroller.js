@@ -1,7 +1,7 @@
 angular.module('myApp')
     .controller('MainCtrl', ['$scope', '$http', '$interval', '$log', '$anchorScroll', '$location', ($scope, $http, $interval, $log, $anchorScroll, $location) => {
 
-        const onUserComplete = function(response) {
+        const onUserComplete = response => {
             $scope.user = response.data;
             $http.get($scope.user.repos_url)
                 .then(onRepos, onError);
