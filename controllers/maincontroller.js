@@ -20,6 +20,7 @@ angular.module('myApp')
                 .then(onUserComplete, onError);
         };
 
-        $scope.username = "angular";
+        $scope.username = "";
         $scope.message = "GitHub Viewer";
+        $scope.repoSortOrder = "-stargazers_count";
     });
