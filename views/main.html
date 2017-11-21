@@ -1,14 +1,9 @@
-<div>
-    <h1>{{message}}</h1>
+<!doctype html>
 
-    <div>{{error}}</div>
+<head></head>
 
-    <form name="searchUser" ng-submit="search(username)">
-        <input type="search" required placeholder="Username to find" ng-model="username" />
-        <input type="submit" value="Search" />
-    </form>
-
-    <div ng-show="user">
+<body>
+    <div id="userDetails">
         <h2>{{user.name}}</h2>
         <img src="{{user.avatar_url}}" title="{{user.name}}">
     </div>
@@ -16,10 +11,10 @@
     <div ng-show="user">
         Order:
         <select ng-model="repoSortOrder">
-                <option value="+name">Name</option>
-                <option value="-stargazers_count">Stars</option>
-                <option value="+language">Language</option>
-            </select>
+    <option value="+name">Name</option>
+    <option value="-stargazers_count">Stars</option>
+    <option value="+language">Language</option>
+</select>
     </div>
 
     <table ng-show="user">
@@ -38,4 +33,4 @@
             </tr>
         </tbody>
     </table>
-</div>
+</body>
