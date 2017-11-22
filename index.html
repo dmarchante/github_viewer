@@ -16,7 +16,7 @@
 
         <div>{{error}}</div>
 
-        <!--{{countdown}}-->
+        {{countdown}}
         <form name="searchUser" ng-submit="search(username)">
             <input type="search" required placeholder="Username to find" ng-model="username" />
             <input type="submit" value="Search" />
@@ -34,10 +34,10 @@
     <script src="scripts/app.js"></script>
 
     <!-- Angular Controllers -->
-    <script src="controllers/maincontroller.js"></script>
+    <script src="scripts/controllers/maincontroller.js"></script>
 
     <!-- Angular Services -->
-    <script src="services/github.js"></script>
+    <script src="scripts/services/github.js"></script>
 </body>
 
 </html>
